@@ -143,11 +143,20 @@
     color:#ffffff;
     font-size: 12px;
     font-weight: 700;
-    background-color: #c1272d;
     padding: 4px 15px;
     border-radius: 10px;
     margin: 0 15px;
+    animation: changeColor 0.8s infinite alternate;
 }
+@keyframes changeColor {
+    from {
+        background-color: #c1272d;
+    }
+    to {
+        background-color: #db8e00;
+    }
+}
+
 /* Home - End */
 
 /* Site Map - Start */
