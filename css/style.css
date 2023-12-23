@@ -71,7 +71,7 @@
     padding: 50px;
     overflow-y: scroll;
 }
-#coderhouse-home-section, #coderhouse-home-section-logs {
+#coderhouse-home-section, #coderhouse-home-section-logs, #coderhouse-home-section-current-version {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,10 +119,23 @@
 .coderhouse-home-logs p {
     margin: 0  0 10px 0;
 }
+.coderhouse-home-current-version {
+    color: #b3b3b3;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+.coderhouse-home-current-version h5 {
+    margin: 0  0 20px 0;
+    font-weight: 300;
+    font-size: 18px;
+}
 #coderhouse-home-section .coderhouse-home-accordion,
 #coderhouse-home-section .coderhouse-home-logoch,
 #coderhouse-home-section .coderhouse-home-name,
-#coderhouse-home-section-logs .coderhouse-home-logs {
+#coderhouse-home-section-logs .coderhouse-home-logs,
+#coderhouse-home-section-current-version .coderhouse-home-current-version {
     max-width: 1200px;
     width: 100%;
 }
