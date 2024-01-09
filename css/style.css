@@ -1,0 +1,320 @@
+/* Geral - Start */
+:root {
+    --bs-primary-bg-subtle: #d1e500;
+  }
+.accordion-button {
+    font-weight: 700;
+}
+.accordion-item {
+    border: solid 2px #ffffff
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+.accordion-button.collapsed {
+    background: #dee2e6
+}
+.accordion-body {
+    padding: 35px 15px;
+    overflow-x: scroll;
+}
+.btn_standard {
+    width: 220px;
+    text-align: center;
+    display: inline-block;
+    color: #222222;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #d1e500;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 7px 0px 0px #bdc600; 
+    box-shadow: 0px 7px 0px 0px #bdc600;
+    text-decoration: none;
+    font-weight: 700;
+    transition:  all 0.2s ease;
+}
+.btn_standard:hover {
+    text-align: center;
+    display: inline-block;
+    color: #222222;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #d1e500;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 5px 0px 0px #bdc600; 
+    box-shadow: 0px 5px 0px 0px #bdc600;
+    text-decoration: none;
+    font-weight: 700;
+    transform: translateY(2px);
+    transition:  all 0.2s ease;
+}
+.btn_standard:active {
+    color: #222222;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #d1e500;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 0px 0px #bdc600; 
+    box-shadow: 0px 0px 0px 0px #bdc600;
+    text-decoration: none;
+    font-weight: 700;
+    transform: translateY(7px);
+    transition:  all 0.2s ease;
+}
+/* Geral - End */
+
+/* Home - Start */
+.coderhouse-home-body {
+    height: 100vh;
+    background-color: #222222;
+    padding: 50px;
+    overflow-y: scroll;
+}
+#coderhouse-home-section, #coderhouse-home-section-logs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.coderhouse-home-logoch {
+    display: flex;
+    margin: 0;
+    padding: 0 0 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+.coderhouse-home-logoch a , .coderhouse-home-logoch a img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+.coderhouse-home-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.coderhouse-home-name h2 {
+    text-align: center;
+    font-size: x-large;
+    color: #ffffff;
+    padding: 0 0 40px 0;
+}
+.coderhouse-home-name img {
+    margin: 2px 0 0 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+.coderhouse-home-logs {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+.coderhouse-home-logs h3 {
+    margin: 0  0 20px 0;
+}
+.coderhouse-home-logs p {
+    margin: 0  0 10px 0;
+}
+#coderhouse-home-section .coderhouse-home-accordion,
+#coderhouse-home-section .coderhouse-home-logoch,
+#coderhouse-home-section .coderhouse-home-name,
+#coderhouse-home-section-logs .coderhouse-home-logs,
+#coderhouse-home-section-current-version .coderhouse-home-current-version {
+    max-width: 1200px;
+    width: 100%;
+}
+.required {
+    color:#ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 15px;
+    border-radius: 10px;
+    margin: 0 15px;
+    animation: changeColor 0.8s infinite alternate;
+}
+@keyframes changeColor {
+    from {
+        background-color: #c1272d;
+    }
+    to {
+        background-color: #db8e00;
+    }
+}
+
+
+
+#coderhouse-home-section-current-version {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 30px 0 0 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #3a3a3a;
+}
+.coderhouse-home-current-version {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+.coderhouse-home-current-version h5 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+.coderhouse-home-current-version h5 a {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+}
+.coderhouse-home-current-version h5 , .coderhouse-home-current-version h5 a {
+    color: #ffffff;
+}
+
+
+/* Home - End */
+
+/* Site Map - Start */
+#coderhouse-website-map {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#coderhouse-website-map .row {
+    min-width: 870px;
+}
+#coderhouse-website-map header {
+    margin-bottom: 15px;
+}
+.sitemap_title {
+    margin: 15px auto 0 auto;
+    width: 200px;
+    background-color: #303F4E;
+    padding: 15px;
+    border-radius: 30px;
+}
+.sitemap_title h4 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+}
+.sitemap_pages {
+    width: 100%;
+}
+.sitemap_page {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 1.2;
+}
+.sitemap_page span {
+    margin: 12px 0 0 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.sitemap_page_color0 {
+    background-color: #6d6d6d;
+}
+.sitemap_page_color1 {
+    background-color: #5FC3A3;
+}
+.sitemap_page_color2 {
+    background-color: #3DCDDA;
+}
+.sitemap_page_color3 {
+    background-color: #2BA9FA;
+}
+.sitemap_page_color4 {
+    background-color: #BA4FE5;
+}
+.sitemap_page_color5 {
+    background-color: #EAA748;
+}
+.sitemap_subpage {
+    margin: 16px 0 0 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 1.2;
+}
+.sitemap_subpage_color0 {
+    background-color: #6d6d6d;
+}
+.sitemap_subpage_color1 {
+    background-color: #147958;
+}
+.sitemap_subpage_color2 {
+    background-color: #008491;
+}
+.sitemap_subpage_color3 {
+    background-color: #005db3;
+}
+.sitemap_subpage_color4 {
+    background-color: #6e059a;
+}
+.sitemap_subpage_color5 {
+    background-color: #a45b07;
+}
+.sitemap_line {
+    background-color: #b3b3b3;
+}
+.sitemap_line_vertical {
+    width: 4px;
+    height: 50px;
+    margin: auto;
+}
+.sitemap_line_horizontal {
+    width: 82%;
+    height: 4px;
+    margin: auto;
+}
+.sitemap_line_horizontal2 {
+    width: 100%;
+    height: 4px;
+    margin: auto 0 auto 100px;
+}
+.sitemap_info {
+    margin: 30px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+.sitemap_info .btn_standard {
+    width: 280px !important;
+    margin-top: 30px !important;
+}
+.sitemap_icon_figma {
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 14px;
+    height: auto;
+    text-decoration: none;
+}
+
+
+
+
+/* Site Map - End */
