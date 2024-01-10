@@ -71,7 +71,10 @@
     padding: 50px;
     overflow-y: scroll;
 }
-#coderhouse-home-section, #coderhouse-home-section-logs {
+#coderhouse-home-section, 
+#coderhouse-home-section-logs, 
+#coderhouse-home-section-accordion,
+#coderhouse-home-section-website-access {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,6 +87,7 @@
     padding: 0 0 20px 0;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .coderhouse-home-logoch a , .coderhouse-home-logoch a img {
     width: 100%;
@@ -107,6 +111,24 @@
     height: 20px;
     border-radius: 3px;
 }
+.coderhouse-home-website-access {
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.coderhouse-home-website-access-title {
+    margin: 0 0 20px 0;
+}
+.coderhouse-home-website-access-subtitle {
+    margin: 0 0 5px 0;
+}
+.coderhouse-home-accordion {
+    width: 100%;
+    border-radius: 10px;
+}
 .coderhouse-home-logs {
     background-color: #ffffff;
     padding: 30px;
@@ -119,11 +141,7 @@
 .coderhouse-home-logs p {
     margin: 0  0 10px 0;
 }
-#coderhouse-home-section .coderhouse-home-accordion,
-#coderhouse-home-section .coderhouse-home-logoch,
-#coderhouse-home-section .coderhouse-home-name,
-#coderhouse-home-section-logs .coderhouse-home-logs,
-#coderhouse-home-section-current-version .coderhouse-home-current-version {
+.row-standard {
     max-width: 1200px;
     width: 100%;
 }
