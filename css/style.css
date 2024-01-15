@@ -193,6 +193,12 @@
 .coderhouse-home-current-version h5 , .coderhouse-home-current-version h5 a {
     color: #ffffff;
 }
+.btn_icon_right {
+    margin-left: 10px;
+}
+.btn_icon_left {
+    margin-right: 10px;
+}
 
 
 /* Home - End */
