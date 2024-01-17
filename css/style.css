@@ -200,10 +200,10 @@
     margin-right: 10px;
 }
 
-
 /* Home - End */
 
 /* Site Map - Start */
+
 #coderhouse-website-map {
     width: 100%;
     text-align: center;
@@ -338,7 +338,50 @@
     text-decoration: none;
 }
 
-
-
-
 /* Site Map - End */
+
+/* Aulas - Start */
+
+.aula10_box {
+    width: 300px;
+    height: 100px;
+    background-color: #9C27B0;
+    padding: 0;
+    margin: 20px;
+    transform: rotate(0deg);
+    transition: all 0.2s;
+    cursor:auto;
+}
+.aula10_box:hover {
+    transform: rotate(10deg);
+    transition: all 0.2s ease;
+    background-color: #d00e4b;
+    cursor:not-allowed;
+}
+.aula10_box p {
+    color: #04bcff;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 5em;
+    line-height: 100px;
+    transition: all 0.2s;
+    text-align: left;
+}
+.aula10_box:hover p {
+    color: #ffffff;
+    font-size: 3em;
+    line-height: 100px;
+    transition: all 0.7s ease-in;
+    margin-left: 300px;
+}
+.aula10_box .aula10_hoverme {
+    font-size: 12px;
+    margin: 0 0 0 20px;
+    color: rgba(255,255,255,1);
+    transition: all 0.2s;
+}
+.aula10_box:hover .aula10_hoverme {
+    font-size: 50px;
+    margin: 0 0 0 20px;
+    color: rgba(255,255,255,0);
+}
