@@ -67,6 +67,12 @@
     transform: translateY(7px);
     transition:  all 0.2s ease;
 }
+.font-bold {
+    font-weight: 700;
+}
+.font-light {
+    font-weight: 300;
+}
 /* Geral - End */
 
 /* Home - Start */
@@ -364,6 +370,7 @@
     cursor:not-allowed;
 }
 .aula10_box p {
+    font-family:'Times New Roman', Times, serif;
     color: #04bcff;
     margin: 0 0 0 10px;
     padding: 0;
@@ -373,6 +380,7 @@
     text-align: left;
 }
 .aula10_box:hover p {
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 3em;
     line-height: 100px;
@@ -380,6 +388,7 @@
     margin-left: 300px;
 }
 .aula10_box .aula10_hoverme {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     margin: 0 0 0 20px;
     color: rgba(255,255,255,1);
