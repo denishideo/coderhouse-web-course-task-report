@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Geral - Start */
 :root {
     --bs-primary-bg-subtle: #d1e500;
@@ -62,6 +67,12 @@
     transform: translateY(7px);
     transition:  all 0.2s ease;
 }
+.font-bold {
+    font-weight: 700;
+}
+.font-light {
+    font-weight: 300;
+}
 /* Geral - End */
 
 /* Home - Start */
@@ -71,7 +82,10 @@
     padding: 50px;
     overflow-y: scroll;
 }
-#coderhouse-home-section, #coderhouse-home-section-logs {
+#coderhouse-home-section, 
+#coderhouse-home-section-logs, 
+#coderhouse-home-section-accordion,
+#coderhouse-home-section-website-access {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,6 +98,7 @@
     padding: 0 0 20px 0;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .coderhouse-home-logoch a , .coderhouse-home-logoch a img {
     width: 100%;
@@ -107,6 +122,24 @@
     height: 20px;
     border-radius: 3px;
 }
+.coderhouse-home-website-access {
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.coderhouse-home-website-access-title {
+    margin: 0 0 20px 0;
+}
+.coderhouse-home-website-access-subtitle {
+    margin: 0 0 5px 0;
+}
+.coderhouse-home-accordion {
+    width: 100%;
+    border-radius: 10px;
+}
 .coderhouse-home-logs {
     background-color: #ffffff;
     padding: 30px;
@@ -119,11 +152,7 @@
 .coderhouse-home-logs p {
     margin: 0  0 10px 0;
 }
-#coderhouse-home-section .coderhouse-home-accordion,
-#coderhouse-home-section .coderhouse-home-logoch,
-#coderhouse-home-section .coderhouse-home-name,
-#coderhouse-home-section-logs .coderhouse-home-logs,
-#coderhouse-home-section-current-version .coderhouse-home-current-version {
+.row-standard {
     max-width: 1200px;
     width: 100%;
 }
@@ -152,15 +181,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
-    margin: 30px 0 0 0;
-    border-radius: 10px 10px 0 0;
-    background-color: #3a3a3a;
 }
 .coderhouse-home-current-version {
     text-align: center;
     padding: 0;
     width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-color: #3a3a3a;
+    margin: 30px 0 0 0;
+    padding: 10px;
 }
 .coderhouse-home-current-version h5 {
     margin: 0;
@@ -175,11 +204,17 @@
 .coderhouse-home-current-version h5 , .coderhouse-home-current-version h5 a {
     color: #ffffff;
 }
-
+.btn_icon_right {
+    margin-left: 10px;
+}
+.btn_icon_left {
+    margin-right: 10px;
+}
 
 /* Home - End */
 
 /* Site Map - Start */
+
 #coderhouse-website-map {
     width: 100%;
     text-align: center;
@@ -314,7 +349,352 @@
     text-decoration: none;
 }
 
-
-
-
 /* Site Map - End */
+
+/* Aula 10 - Start */
+
+.aula10_box {
+    width: 300px;
+    height: 100px;
+    background-color: #9C27B0;
+    padding: 0;
+    margin: 20px;
+    transform: rotate(0deg);
+    transition: all 0.2s;
+    cursor:auto;
+}
+.aula10_box:hover {
+    transform: rotate(10deg);
+    transition: all 0.2s ease;
+    background-color: #d00e4b;
+    cursor:not-allowed;
+}
+.aula10_box p {
+    font-family:'Times New Roman', Times, serif;
+    color: #04bcff;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 5em;
+    line-height: 100px;
+    transition: all 0.2s;
+    text-align: left;
+}
+.aula10_box:hover p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 3em;
+    line-height: 100px;
+    transition: all 0.7s ease-in;
+    margin-left: 300px;
+}
+.aula10_box .aula10_hoverme {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0 0 0 20px;
+    color: rgba(255,255,255,1);
+    transition: all 0.2s;
+}
+.aula10_box:hover .aula10_hoverme {
+    font-size: 0px;
+    margin: 0 0 0 20px;
+    color: rgba(255,255,255,0);
+}
+
+/* Aula 10 - End */
+
+/* Aula 14 - Start */
+
+.aula14_box {
+    width: 450px;
+    height: 100px;
+    background-image: linear-gradient(to top, blue, green);
+    background-color: #d00e4b;
+    padding: 0;
+    margin: 20px;
+    transform: rotate(0deg);
+    transition: all 0.2s;
+    cursor:auto;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.aula14_box:hover {
+    transform: rotate(10deg);
+    transition: all 0.2s ease;
+    background-image: none;
+    cursor:not-allowed;
+}
+.aula14_frase {
+    display: none;
+}
+.aula14_box:hover .aula14_frase {
+    display: inline-block;
+}
+.aula14_box p {
+    color: #04bcff;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 5em;
+    line-height: 100px;
+    transition: all 0.1s;
+    text-align: left;
+}
+.aula14_box:hover p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 3em;
+    line-height: 100px;
+    transition: all 0.7s ease-in;
+    margin-left: 450px;
+}
+.aula14_box .aula14_hoverme {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0 0 0 20px;
+    color: rgba(255,255,255,1);
+    transition: all 0.2s;
+}
+.aula14_box:hover .aula14_hoverme {
+    font-size: 0px;
+    margin: 0 0 0 20px;
+    color: rgba(255,255,255,0);
+}
+.aula14_radialgrad {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-image: radial-gradient(purple, red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    overflow: visible;
+    border: dotted 8px #000000;
+    animation-duration: 6s;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+}
+@keyframes girar {
+    0% { transform: rotate(0deg);}
+    50% { transform: rotate(720deg); margin-left: 400px;}
+    100% { transform: rotate(0deg); margin-left: 0;}         
+}
+.aula14_postit-container{
+    margin: 50px 20px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.aula14_postit-frame{
+    width: 250px;
+    height: 250px;
+    border: solid 5px #000000;
+    background-color: #6d6d6d;
+    position: absolute;
+}
+.aula14_postit-content {
+    width: 250px;
+    height: 250px;
+    background-color: #b8252b;
+    border: solid 5px #000000;
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 3s;
+    animation-name: postit;
+    animation-iteration-count: infinite;
+    transform: skewY(0deg) scalex(100%);
+    transition: all 0.5s ease-in;
+}
+.aula14_postit-content:hover {
+    transform: skewY(20deg) scalex(80%);
+    transition: all 0.5s ease-in;
+    cursor: progress;
+}
+/* Aula 14 - End */
+
+/* Aula 16 - Start */
+
+.aula16_container {
+    border: solid 2px #d00e4b;
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: auto;
+}
+.aula16_container > div {
+    border: dotted 2px #005db3;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.aula16_container > div:nth-of-type(1) {
+    background-color: #147958;
+}
+.aula16_container > div:nth-of-type(2) {
+    background-color: #2BA9FA;
+}
+.aula16_container > div:nth-of-type(3) {
+    background-color: #db8e00;
+}
+.aula16_container > div:nth-of-type(4) {
+    background-color: #BA4FE5;
+}
+.aula16_container > div:nth-of-type(5) {
+    background-color: #a45b07;
+}
+
+.aula16_container2 {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 900px;
+    min-width: 600px;
+    height: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.aula16_container2 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aula16_container2_nav {
+    width: 200px;
+    height: 100%;
+    background-color: #f37b38;
+}
+.aula16_container2_body {
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: #0f9fd5;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.aula16_container2_header {
+    width: 100%;
+    height: 120px;
+    background-color: #0f9fd5;
+}
+.aula16_container2_contentcontainer {
+    width: 100%;
+    height: calc(100% - 120px - 110px);
+    flex-direction: row;
+}
+.aula16_container2_footer {
+    width: 100%;
+    height: 110px;
+    background-color: #1287b3;
+}
+.aula16_container2_content {
+    width:  calc(100% - 210px);
+    height: 100%;
+    background-color: #554592;
+}
+.aula16_container2_sidebar {
+    width: 210px;
+    height: 100%;
+    background-color: #f39d62;
+}
+
+/* Aula 16 - End */
+
+/* Aula 17 - Start */
+
+#aula17_grade1 {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav conteudo"
+    "nav footer";
+    grid-template-columns: 120px auto;
+    grid-template-rows: 100px 300px 75px;
+    border: 2px solid black;
+}
+.aula17_border {
+    border: 2px solid black;
+}
+#aula17_grade1 header {
+    grid-area: header;
+    background-color: #e44074;
+}
+#aula17_grade1 footer {
+    grid-area: footer;
+    background-color: #71a091;
+}
+section#aula17_conteudo {
+    grid-area: conteudo;
+    background-color: #e3a580;
+}
+#aula17_grade1 nav {
+    grid-area: nav;
+    background-color: #b6b181;
+}
+.aula17_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#aula17_grade2 {
+    margin: 70px auto;
+    width: 760px;
+    display: grid;
+    grid-template-areas:
+    "green green blue blue blue"
+    "green green orange orange darkgreen"
+    "pink pink orange orange brown";
+    grid-template-columns: 120px 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    gap: 20px;
+    padding: 40px;
+    background: linear-gradient(90deg, #2f1232, #722c5d);
+}
+#aula17_grade2 .green {
+    grid-area: green;
+    background-color: #308f7f;
+}
+#aula17_grade2 .blue {
+    grid-area: blue;
+    background-color: #45a3b8;
+}
+#aula17_grade2 .orange {
+    grid-area: orange;
+    background-color: #9d4d49;
+}
+#aula17_grade2 .darkgreen {
+    grid-area: darkgreen;
+    background-color: #2e525c;
+}
+#aula17_grade2 .pink {
+    grid-area: pink;
+    background-color: #b65191;
+}
+#aula17_grade2 .brown {
+    grid-area: brown;
+    background-color: #645957;
+}
+
+#aula17_grade2 div {
+    border-radius: 10px;
+}
+
+/* Aula 17 - End */
