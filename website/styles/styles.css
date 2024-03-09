@@ -164,6 +164,12 @@ main {
   font-weight: 600;
 }
 
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
 /* ----- End - Header ----- */
 
 /* ----- Start - Home ----- */
@@ -638,3 +644,40 @@ main {
   }
 
 /* ----- End - Home ----- */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar.show {
+      display: flex;
+      background-color: #4E1458;
+      height: auto;
+      width: min-content;
+      border-radius: 10px;
+  }
+
+  .navbar.show li:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 10%, rgba(255, 255, 255, 0.15) 40%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0.00) 90%);
+  }
+
+  .navbar.show li:hover a {
+    font-weight: 600;
+  }
+
+  .navbar li {
+      margin: 10px 0;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+}
