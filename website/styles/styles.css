@@ -196,7 +196,10 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  overflow: hidden;    
+  overflow: hidden;
+  display: flex; /* Adicionando um layout flexível */
+  position: relative; /* Permitindo um posicionamento relativo para os botões */
+  justify-content: center;
 }
 
 .destaque-jogo {
@@ -204,6 +207,32 @@ main {
   height: 100%;
   background-position: center;
   background-size: cover;
+  display: none;
+  flex: 0 0 100%; /* Definindo a largura das imagens */
+  margin-right: 10px; /* Adicionando margem entre as imagens */
+  z-index: -999;
+}
+
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 5px;
 }
 
   .ranking-home {
@@ -646,6 +675,11 @@ main {
 /* ----- End - Home ----- */
 
 @media screen and (max-width: 768px) {
+
+.container-jogos-home{
+  margin-top: 80px;
+}
+
   .navbar {
       display: none;
       flex-direction: column;
