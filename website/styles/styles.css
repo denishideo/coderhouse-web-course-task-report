@@ -164,6 +164,12 @@ main {
   font-weight: 600;
 }
 
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
 /* ----- End - Header ----- */
 
 /* ----- Start - Home ----- */
@@ -190,7 +196,10 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  overflow: hidden;    
+  overflow: hidden;
+  display: flex; /* Adicionando um layout flexível */
+  position: relative; /* Permitindo um posicionamento relativo para os botões */
+  justify-content: center;
 }
 
 .destaque-jogo {
@@ -198,6 +207,32 @@ main {
   height: 100%;
   background-position: center;
   background-size: cover;
+  display: none;
+  flex: 0 0 100%; /* Definindo a largura das imagens */
+  margin-right: 10px; /* Adicionando margem entre as imagens */
+  z-index: -999;
+}
+
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 5px;
 }
 
   .ranking-home {
@@ -638,3 +673,45 @@ main {
   }
 
 /* ----- End - Home ----- */
+
+@media screen and (max-width: 768px) {
+
+.container-jogos-home{
+  margin-top: 80px;
+}
+
+  .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar.show {
+      display: flex;
+      background-color: #4E1458;
+      height: auto;
+      width: min-content;
+      border-radius: 10px;
+  }
+
+  .navbar.show li:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 10%, rgba(255, 255, 255, 0.15) 40%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0.00) 90%);
+  }
+
+  .navbar.show li:hover a {
+    font-weight: 600;
+  }
+
+  .navbar li {
+      margin: 10px 0;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+}
