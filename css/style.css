@@ -107,7 +107,12 @@
 }
 .coderhouse-home-name {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+}
+.coderhouse-home-name > div {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .coderhouse-home-name h2 {
