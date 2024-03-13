@@ -715,3 +715,50 @@ main {
       display: block;
   }
 }
+
+.rodape-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #000000;
+
+}
+
+.rodape-filhos {
+  display: flex;
+  background-color: rgba(232, 255, 60, 1);
+  border-radius: 5%;
+  color: #000000;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo-footer {
+  size: 60%;
+}
+
+.rodape-filhos-redes1{
+  
+  flex-direction: row;
+  font-size: small;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+
+.rodape-filhos-redes2{
+  
+  flex-direction: row;
+  font-size: small;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+
+.logo-rodape-filhos-redes {
+height: 50px;
+width: auto;
+
+}
