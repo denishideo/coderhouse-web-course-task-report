@@ -34,4 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Adicionando eventos aos botões de navegação
     document.getElementById("prevBtn").addEventListener("click", prevSlide);
     document.getElementById("nextBtn").addEventListener("click", nextSlide);
+
+    // Temporizador para avançar os slides automaticamente a cada 3 segundos
+    setInterval(nextSlide, 3000); // 3000 milissegundos = 3 segundos
+
   });
