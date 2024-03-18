@@ -67,6 +67,15 @@
     transform: translateY(7px);
     transition:  all 0.2s ease;
 }
+.btn_main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.btn_main:hover {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
 .font-bold {
     font-weight: 700;
 }
@@ -343,11 +352,18 @@
     width: 100%;
 }
 .sitemap_info .btn_standard {
-    width: 280px !important;
+    width: 290px !important;
     margin-top: 30px !important;
 }
 .sitemap_icon_figma {
     margin: 0 10px 0 0;
+    padding: 0;
+    width: 14px;
+    height: auto;
+    text-decoration: none;
+}
+.sitemap_icon_figma2 {
+    margin: 0 0 0 10px;
     padding: 0;
     width: 14px;
     height: auto;
