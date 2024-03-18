@@ -29,7 +29,9 @@
         <div class="coderhouse-home-website-access row-standard">
           <p class="coderhouse-home-website-access-subtitle">Acesso ao projeto do website</p>
           <h3 class="coderhouse-home-website-access-title">O Guia do Mochileiro dos Games</h3>
-          <a class="btn_standard" target="_blank" href="website/index.html" target="_blank">Acessar o Website <i class="btn_icon_right bi bi-box-arrow-up-right"></i></a>
+          <a class="btn_standard btn_main" target="_blank" href="website/index.html" target="_blank">Acessar o Website <i class="btn_icon_right bi bi-box-arrow-up-right"></i></a>
+          <a class="btn_standard btn_main" target="_blank" href="https://www.figma.com/file/S3gbaXHhjTUwHXucgLLrV6/Website---O-Guia-do-Mochileiro-dos-Games?type=design&node-id=0%3A1&mode=design&t=X1J7kxiyhiCI9Bc3-1" target="_blank">Acessar o Figma <img class="sitemap_icon_figma2" src="images/logos/figma.svg"></a>
+          <a class="btn_standard btn_main" target="_blank" href="apresentacao/index.html" target="_blank">Ver a apresentação <i class="btn_icon_right bi bi-box-arrow-up-right"></i></a>
         </div>
     </section>
     
@@ -38,11 +40,27 @@
 
           <div class="accordion-item">
            <h2 class="accordion-header">
-             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aula17" aria-expanded="true" aria-controls="aula17">
+             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#apresentacao" aria-expanded="true" aria-controls="apresentacao">
+               Apresentação do Projeto <span class="required">ENTREGA OBRIGATÓRIA</span>
+             </button>
+           </h2>
+           <div id="apresentacao" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+             <div class="accordion-body">
+              <p>Apesar do projeto ser um MVP,<br>a apresentação compila informações do desenvolvimento dele<br>e as soluções encontradas pela equipe durante o processo.</p>
+              <p>
+                <a class="btn_standard" target="_blank" href="apresentacao/index.html" target="_blank">Ver a apresentação <i class="btn_icon_right bi bi-box-arrow-up-right"></i></a>
+              </p>
+             </div>
+           </div>
+          </div>
+
+          <div class="accordion-item">
+           <h2 class="accordion-header">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aula17" aria-expanded="true" aria-controls="aula17">
                Exercícios da Aula 17 - Flexbox
              </button>
            </h2>
-           <div id="aula17" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+           <div id="aula17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
              <div class="accordion-body">
 
               <div id="aula17_grade1">
@@ -398,8 +416,9 @@
     <section id="coderhouse-home-section-logs">
       <div class="coderhouse-home-logs row-standard">
         <h3>Log de versões</h3>
-        <p><strong>Versão 0.5.2</strong> - Alterado detalhes no CSS;</p>
-        <p><strong>Versão 0.5.1</strong> - Adicionado carrossel e responsividade da navbar;</p>
+        <p><strong>Versão 0.6.0</strong> - Estruturação de apresentação e formatação do projeto para entrega MVP;</p>
+        <p><strong>Versão 0.5.2</strong> - Alterado detalhes no CSS e adição de informações sobre a equipe;</p>
+        <p><strong>Versão 0.5.1</strong> - Adicionado carrossel e responsividade da navbar no projeto;</p>
         <p><strong>Versão 0.5.0</strong> - Padronização e estruturação do projeto em Grid e responsividade em Media Queries;</p>
         <p><strong>Versão 0.4.0</strong> - O <b>projeto principal</b> foi recondicionado ao framework bootstrap;</p>
         <p><strong>Versão 0.3.0</strong> - Adicionado ao <b>projeto principal</b> CSS com Grid e Flex;</p>
@@ -411,7 +430,7 @@
 
     <footer id="coderhouse-home-section-current-version">
       <div class="coderhouse-home-current-version row-standard">
-        <h5>Versão atual: 0.5.0 - 2024 <a href="https://github.com/denishideo/coderhouse-web-course-task-report" target="_blank">(ver outras versões)</a></h5>
+        <h5>Versão atual: 0.6.0 - 2024 <a href="https://github.com/denishideo/coderhouse-web-course-task-report" target="_blank">(ver outras versões)</a></h5>
       </div>
     </footer>
 
